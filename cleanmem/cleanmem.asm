@@ -13,13 +13,13 @@ Start:
 ; Limpa a região de memória $00-$FF
 ; Toda a RAM e também todos os registradores que estão localizados nesta região
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    lda #0                ; Carrega o valor #0 em A
-    ldx #$FF              ; Carrega o valor $FF em X
+    lda #0                  ; Carrega o valor #0 em A
+    ldx #$FF                ; Carrega o valor $FF em X
     
 MemLoop:
-    sta $0, x             ; Armazena o valor de A no endereço $0 + X
-    dex                   ; Decrementa o valor de X (x--)
-    bne MemLoop           ; Se X for diferente de zero, pula para MemLoop (registrador z != 0)
+    sta $0,x                ; Armazena o valor de A no endereço $0 + X
+    dex                     ; Decrementa o valor de X (x--)
+    bne MemLoop             ; Se X for diferente de zero, pula para MemLoop (registrador z != 0)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Preencha o tamanho da ROM exatamente com 4KB.
@@ -27,5 +27,5 @@ MemLoop:
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
     org $FFFC             
-    .word Start           ; Vetor de reset em $FFFC (onde o programa começa)
-    .word Start           ; Vetor de interrupção em $FFFC (não utilizado no VSC)
+    .word Start             ; Vetor de reset em $FFFC (onde o programa começa)
+    .word Start             ; Vetor de interrupção em $FFFC (não utilizado no VSC)
