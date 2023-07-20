@@ -15,10 +15,11 @@ Start:
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
     lda #0                  ; Carrega o valor #0 em A
     ldx #$FF                ; Carrega o valor $FF em X
+    sta #FF                 ; garantindo que $FF sera sezado antes do loop
     
 MemLoop:
-    sta $0,x                ; Armazena o valor de A no endereço $0 + X
     dex                     ; Decrementa o valor de X (x--)
+    sta $0,x                ; Armazena o valor de A no endereço $0 + X
     bne MemLoop             ; Se X for diferente de zero, pula para MemLoop (registrador z != 0)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
