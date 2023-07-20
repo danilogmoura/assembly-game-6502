@@ -11,3 +11,5 @@ O objetivo principal deste projeto é desenvolver um jogo completo usando a ling
 Embora este projeto seja, inicialmente, uma jornada pessoal de aprendizado, fico feliz em receber contribuições de outros entusiastas da programação em assembly 6502 ou qualquer pessoa interessada em jogos retrô. Se você tiver sugestões, correções ou melhorias, sinta-se à vontade para abrir um "issue" ou enviar um "pull request". Juntos, podemos tornar esse jogo um projeto divertido e educacional para a comunidade.
 
 Vamos começar nossa jornada no incrível mundo do assembly 6502 e criar um jogo memorável! Divirta-se codificando! 😄
+
+![](https://dcbadge.vercel.app/api/shield/83192955791212544)
