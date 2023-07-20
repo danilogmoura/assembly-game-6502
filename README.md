@@ -1,1 +1,13 @@
-# assembly-game-6502
+# Projeto de Desenvolvimento de Jogo em Assembly para 6502
+
+Bem-vindo(a) ao meu projeto de desenvolvimento de jogo em assembly para a arquitetura 6502! Este repositório é o ponto de partida para uma jornada emocionante de aprendizado, onde explorarei as profundezas da linguagem assembly 6502 e aplicarei meus conhecimentos para criar um jogo divertido e desafiador.
+
+## Objetivo
+
+O objetivo principal deste projeto é desenvolver um jogo completo usando a linguagem assembly específica para o processador 6502. A 6502 é uma arquitetura bastante icônica e foi amplamente utilizada em consoles de jogos clássicos como o Nintendo Entertainment System (NES), Atari 2600 e muitos outros. Aprender a programar em assembly para essa arquitetura é uma oportunidade única para mergulhar na história dos jogos eletrônicos e entender os desafios enfrentados pelos desenvolvedores daquela época.
+
+## Contribuições
+
+Embora este projeto seja, inicialmente, uma jornada pessoal de aprendizado, fico feliz em receber contribuições de outros entusiastas da programação em assembly 6502 ou qualquer pessoa interessada em jogos retrô. Se você tiver sugestões, correções ou melhorias, sinta-se à vontade para abrir um "issue" ou enviar um "pull request". Juntos, podemos tornar esse jogo um projeto divertido e educacional para a comunidade.
+
+Vamos começar nossa jornada no incrível mundo do assembly 6502 e criar um jogo memorável! Divirta-se codificando! 😄
