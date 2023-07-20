@@ -4,6 +4,7 @@
 Start:
     lda #$0A            ; Carregue o registrador A com o valor hexadecimal $A
     ldx #%11111111      ; Carregue o registrador X com o valor binário %11111111
+    
     sta $80             ; Armazene o valor no registrador A no endereço de memória $80
     stx $81             ; Armazene o valor no registrador X no endereço de memória $81
 

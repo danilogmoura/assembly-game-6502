@@ -6,7 +6,7 @@ Start:
     STA $80             ; Armazene o valor de A na posição de memória $80
      
     INC $80             ; Incrementar o valor dentro de uma posição de memória (página zero) $80
-    DEC $80             ; Diminuir o valor dentro de uma posição de memória (página zero) $80
+    DEC $80             ; Decrementa o valor dentro de uma posição de memória (página zero) $80
     
     JMP Start           ; Salte para o endereço de memória $F000 (loop infinito)
 
