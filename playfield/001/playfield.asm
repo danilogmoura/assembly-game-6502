@@ -25,8 +25,8 @@ Reset:
 ;; Inicializa um novo frame configurando o VBLANK e VSYNC
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 StartFrame:
-	lda #02			; %00000010
-	sta VBLANK		; ativa o VBLANK
+    lda #02			; %00000010
+    sta VBLANK		; ativa o VBLANK
     sta VSYNC		; ativa o VSYNC
         
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
