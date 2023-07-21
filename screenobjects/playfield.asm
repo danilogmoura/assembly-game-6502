@@ -24,7 +24,7 @@ Reset:
     lda #$C6			        ; player 1, cor verde
     sta COLUP1
 
-    ldy #%00000010              ; CTRLPF D1 set to 1 means (score)
+    ldy #%00000010              ; CTRLPF D1 definido como 1 (placar)
     sty CTRLPF
     
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
