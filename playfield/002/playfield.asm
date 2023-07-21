@@ -1,4 +1,4 @@
-	processor 6502
+    processor 6502
        
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Adiciona os arquivos com os macros
@@ -13,7 +13,7 @@
     org $F000
         
 Reset:
-   	CLEAN_START
+    CLEAN_START
         
     ldx #$80		; background azul
     stx COLUBK
@@ -25,14 +25,14 @@ Reset:
 ;; Inicializa um novo frame configurando o VBLANK e VSYNC
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 StartFrame:
-	lda #02			; %00000010
-	sta VBLANK		; ativa o VBLANK
+    lda #02			; %00000010
+    sta VBLANK		; ativa o VBLANK
     sta VSYNC		; ativa o VSYNC
         
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Gera 3 linha do VSYNC
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-	REPEAT 3
+    REPEAT 3
         sta WSYNC	; 3 scanlines para VSYNC
     REPEND
     lda #00
@@ -41,7 +41,7 @@ StartFrame:
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Gera as 37 linhas recomendadas para o VBLANK
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;    
-	REPEAT 37
+    REPEAT 37
         sta WSYNC
     REPEND
     lda #00
@@ -90,7 +90,7 @@ StartFrame:
         sta WSYNC
     REPEND
         
-	; Seta o PF0 para 1110 (LBS ) e PF1-PF2 para 1111 1111
+    ; Seta o PF0 para 1110 (LBS ) e PF1-PF2 para 1111 1111
     ldx #%11100000
     stx PF0
     ldx #%11111111
@@ -114,7 +114,7 @@ StartFrame:
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Gera 30 linhas de overscan VBLANK para completar nosso quadro
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-	lda #02
+    lda #02
     sta VBLANK		; ativa VBLANK
     
     REPEAT 30
@@ -123,7 +123,7 @@ StartFrame:
     lda #00
     sta VBLANK
         
-	jmp StartFrame
+    jmp StartFrame
         
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Completa a ROM com 4KB, exigência do 6502
