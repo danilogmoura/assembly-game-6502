@@ -13,7 +13,7 @@ O objetivo principal deste projeto é desenvolver um jogo completo usando a ling
 **Créditos por usar o DASM:**
 O DASM foi desenvolvido por Matthew Dillon (munsie) e pode ser encontrado no repositório oficial: [https://github.com/munsie/dasm](https://github.com/munsie/dasm)
 
-**Pikuma**
+**Pikuma:**
 Se você deseja aprender sobre programação de baixo nível, o site [Pikuma](https://pikuma.com/about) oferece cursos que abrangem aspectos importantes do currículo padrão de ciência da computação. 
 
 Vamos começar nossa jornada no incrível mundo do assembly 6502 e criar um jogo memorável! Divirta-se codificando! 😄
